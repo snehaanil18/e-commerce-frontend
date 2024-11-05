@@ -20,7 +20,7 @@ function Login() {
     };
 
     const handleLogin = async() => {
-        console.log(userDetail);
+
         try{
             const res = await loginUserAPI(userDetail);
             if(res.status==200){

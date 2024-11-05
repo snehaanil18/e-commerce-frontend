@@ -24,12 +24,10 @@ function Register() {
     };
 
     const handleRegister = async() => {
-        console.log('register');
-        
-        console.log('Register',userDetail);
+
         try{
             const res = await registerUserAPI(userDetail);
-            console.log(res);
+
             if(res.status==200){
                 alert('Successfully Registered!')
                 router.push('/login')

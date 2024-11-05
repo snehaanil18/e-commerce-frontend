@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const server_url = 'http://localhost:4000'
+const server_url = 'http://localhost:4001'
 
 export const loginUserAPI = async(userDetail) => {
     return await axios.post(`${server_url}/login-user`,userDetail,{

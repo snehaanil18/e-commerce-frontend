@@ -15,14 +15,18 @@ function AllProducts() {
 
   const addtoCart = async(id) => {
     const res = await addToCartAPI(id)
-    console.log(res);
-    
-    
+    if(res.status == 200){
+      const details = res.data;
+      alert(details.message)
+    }
+    else{
+      alert('Cannot add Product')
+    }
   }
 
   useEffect(() => {
     getAllproducts()
-  })
+  },[])
 
   return (
     <div className={styles.container}>
@@ -32,6 +36,7 @@ function AllProducts() {
           <div className={styles.content}>
             <h4>{item.name} </h4>
             <p>{item.productID} </p>
+            <h5>Price: {item.price} </h5>
           </div>
           <button onClick={() => addtoCart(item)}>Add to cart</button>
         </div>
