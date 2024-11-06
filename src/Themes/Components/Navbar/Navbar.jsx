@@ -11,7 +11,7 @@ function Navbar() {
             </div>
             <div className={styles.navElements}>
                 <ul>
-                <li>
+                    <li>
                         <Link href={'/'}>Products</Link>
                     </li>
                     <li>
@@ -24,9 +24,6 @@ function Navbar() {
                         <Link href={'/register'}>Register</Link>
                     </li>
                 </ul>
-
-
-
             </div>
         </div>
     )

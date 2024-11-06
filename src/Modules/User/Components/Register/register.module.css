@@ -1,0 +1,75 @@
+.main{
+    margin: 0 ;
+    position: relative;
+    background-image: url('../../../../../src/Themes/Images/background.png');
+    background-repeat: round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height of the viewport */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: 10px;
+    width: 550px;
+    overflow: hidden;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    position: relative;
+    
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 20px; /* Space below heading */
+    color: #333333;
+}
+
+.name{
+    color: #666666;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.container input{
+    height: 56px;
+    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0 12px; /* Padding for input */
+    margin-bottom: 20px;
+}
+
+.signUp button{
+    height: 56px;
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius:50px;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.signinText{
+    text-align: center; /* Center the sign-in text */
+    margin-top: 20px; /* Space above sign-in text */
+}
+
+.link{
+    color: #111111; /* Link color */
+    text-decoration: underline; /* Remove underline */
+    font-weight: bold;
+}
+
+.link:hover{
+    text-decoration: underline; 
+}

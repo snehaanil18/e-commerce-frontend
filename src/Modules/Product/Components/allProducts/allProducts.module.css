@@ -1,19 +1,172 @@
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.card{
-    border: 1px solid #ccc; /* Optional: border around the card */
-    border-radius: 8px; /* Optional: rounded corners */
-    overflow: hidden; /* Prevent overflow */
-    margin-top: 16px; /* Space above the card */
+.card {
+    border: 1px solid #ccc;
+    /* Optional: border around the card */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    overflow: hidden;
+    /* Prevent overflow */
+    margin-top: 16px;
+    /* Space above the card */
     width: 350px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+}
+
+.collection {
+    width: 100%;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.count {
+    font-size: 14px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 40px;
+}
+
+.productCard {
+    border: 1px solid #ccc;
+    /* Optional: border around the card */
+    border-radius: 8px;
+    /* Optional: rounded corners */
+    overflow: hidden;
+    /* Prevent overflow */
+    margin-top: 16px;
+    /* Space above the card */
+    width: 350px;
+}
+
+.badgeWrapper {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.heartWrapper {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.heartImage {
+    width: 15px;
+    /* Make image responsive */
+    height: 15px;
+    /* Maintain aspect ratio */
+    top: 98%;
+    right: 98%;
+    max-width: 100%;
+    /* Make image responsive */
+    height: auto;
+}
+
+.imageBlock {
+    background-color: #f0f0f0;
+    /* Grey background color */
+    width: 40%;
+    /* Set width for image block */
+    display: flex;
+    /* Center image */
+    align-items: center;
+    /* Center image vertically */
+    justify-content: center;
+    /* Center image horizontally */
+
+}
+
+.productImage {
+    max-width: 100%;
+    /* Make image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    background: #ededed;
+    height: 250px;
+    position: relative;
+}
+
+.detailsBlock {
+    padding: 16px;
+    /* Padding for details */
+    width: 90%;
+    /* Set width for details block */
+}
+
+.detailsBlock h3 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 18px;
+    /* Font size for brand */
+}
+
+.detailsBlock p {
+    margin: 4px 0;
+    /* Margin for paragraphs */
+    font-size: 14px;
+    /* Font size for description */
+}
+
+.head1 {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subhead1 {
+    color: #6a6a6a;
+    font-size: 13px;
+    text-wrap: nowrap;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.buyButton {
+    background-color: #ffffff;
+    /* Button background color */
+    color: #000;
+    /* Button text color */
+    border: 1px solid #848484;
+    padding: 8px 16px;
+    /* Padding for button */
+    border-radius: 50px;
+    /* Rounded corners for button */
+    cursor: pointer;
+    /* Pointer on hover */
+    margin-top: 8px;
+    /* Space above button */
+    font-size: 13px;
+    width: 100%;
+    font-weight: bold;
+    height: 40px;
 }

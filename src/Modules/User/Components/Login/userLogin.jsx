@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import {loginUserAPI} from '../../Services/allAPI'
 import { useRouter } from 'next/navigation';
+import styles from './login.module.css'
+import Link from 'next/link';
 
 function Login() {
     const [userDetail,setUserDetail] = useState({
@@ -42,14 +44,20 @@ function Login() {
     }
 
   return (
-    <div>
-        <div className="container">
+    <div className={styles.main}>
+        <div className={styles.container}>
+            <h2 className={styles.heading}>Sign In</h2>
+            <p className={styles.name}>Email or Phone Number</p>
             <input type="text" placeholder='Enter email address' name='email' value={userDetail.email}  onChange={handleChange} />
+
+            <p className={styles.name}>Password</p>
             <input type="password" placeholder='Enter password' name='password' value={userDetail.password} onChange={handleChange} />
 
             <div>
-                <button onClick={handleLogin}>Login</button>
+                <button className={styles.loginButton} onClick={handleLogin}>Login</button>
             </div>
+
+            <p className={styles.signinText}>Already have an account? <Link href="/register" className={styles.link}>Sign Up</Link></p>
         </div>
     </div>
   )
